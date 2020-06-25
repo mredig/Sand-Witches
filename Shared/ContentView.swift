@@ -43,7 +43,7 @@ struct SandwichCell: View {
 	let sandwich: Sandwich
 
 	var body: some View {
-		NavigationLink(destination: Text(sandwich.name)) {
+		NavigationLink(destination: SandwichDetail(sandwich: sandwich)) {
 			Image(sandwich.thumbnailName)
 				.resizable()
 				.frame(width: 44.0, height: 44.0)
